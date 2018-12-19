@@ -82,9 +82,33 @@ body {
 		border-bottom: 0;
 	}
 }
+
+.profile {
+	position: absolute;
+	right: 4rem;
+	top: 4rem;
+	display: flex;
+}
+
+.profile-image {
+	width: 5rem;
+	height: 5rem;
+	border-radius: 2px;
+	padding: 1rem;
+}
+.profile-text {
+	color: #444444;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 </style>
 </head>
 <body>
+		<div class="profile">
+			<img src="user.jpg" alt="" class="profile-image">
+			<div class="profile-text">Betadose</div>
+		</div>
 	<div class="container">
 
 		<div class="header clearfix">
@@ -137,6 +161,18 @@ body {
 	function startPublishing() {
 		streamId = streamNameBox.value;
 		webRTCAdaptor.publish(streamId, token);
+		$.ajax
+		({
+			type: "POST",
+			url: 'https://cors-anywhere.herokuapp.com/http://shaddygarg.pythonanywhere.com/events/',
+			dataType: 'json',
+			async: false,
+			contentType: 'application/json',
+			//json object to sent to the authentication url
+			data: JSON.stringify({ "username": "alphadose", "link" : "rtmp://192.168.43.164:1935/WebRTCApp/"+streamId, "name": streamId, "current_live": true}),
+			success: function () { 
+			}
+		})
 	}
 
 	function stopPublishing() {
