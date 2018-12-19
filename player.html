@@ -2,105 +2,116 @@
 pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta charset="UTF-8">
-<link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-	integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-	crossorigin="anonymous">
-<script src="//code.jquery.com/jquery-1.12.4.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+	 crossorigin="anonymous">
+	<script src="//code.jquery.com/jquery-1.12.4.min.js"></script>
 
-<style type="text/css">
-video {
-	width: 100%;
-	max-width: 640px;
-}
-/* Space out content a bit */
-body {
-	padding-top: 20px;
-	padding-bottom: 20px;
-}
+	<style type="text/css">
+		video {
+			width: 100%;
+			max-width: 640px;
+		}
 
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header, .marketing, .footer {
-	padding-right: 15px;
-	padding-left: 15px;
-}
+		/* Space out content a bit */
+		body {
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
 
-/* Custom page header */
-.header {
-	padding-bottom: 20px;
-	border-bottom: 1px solid #e5e5e5;
-}
-/* Make the masthead heading the same height as the navigation */
-.header h3 {
-	margin-top: 0;
-	margin-bottom: 0;
-	line-height: 40px;
-}
+		/* Everything but the jumbotron gets side spacing for mobile first views */
+		.header,
+		.marketing,
+		.footer {
+			padding-right: 15px;
+			padding-left: 15px;
+		}
 
-/* Custom page footer */
-.footer {
-	padding-top: 19px;
-	color: #777;
-	border-top: 1px solid #e5e5e5;
-}
+		/* Custom page header */
+		.header {
+			padding-bottom: 20px;
+			border-bottom: 1px solid #e5e5e5;
+		}
 
-/* Customize container */
-@media ( min-width : 768px) {
-	.container {
-		max-width: 730px;
-	}
-}
+		/* Make the masthead heading the same height as the navigation */
+		.header h3 {
+			margin-top: 0;
+			margin-bottom: 0;
+			line-height: 40px;
+		}
 
-.container-narrow>hr {
-	margin: 30px 0;
-}
+		/* Custom page footer */
+		.footer {
+			padding-top: 19px;
+			color: #777;
+			border-top: 1px solid #e5e5e5;
+		}
 
-/* Main marketing message and sign up button */
-.jumbotron {
-	text-align: center;
-	border-bottom: 1px solid #e5e5e5;
-}
+		/* Customize container */
+		@media (min-width : 768px) {
+			.container {
+				max-width: 730px;
+			}
+		}
 
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-	/* Remove the padding we set earlier */
-	.header, .marketing, .footer {
-		padding-right: 0;
-		padding-left: 0;
-	}
-	/* Space out the masthead */
-	.header {
-		margin-bottom: 30px;
-	}
-	/* Remove the bottom border on the jumbotron for visual effect */
-	.jumbotron {
-		border-bottom: 0;
-	}
-}
-.profile {
-	position: absolute;
-	right: 4rem;
-	top: 4rem;
-	display: flex;
-}
+		.container-narrow>hr {
+			margin: 30px 0;
+		}
 
-.profile-image {
-	width: 5rem;
-	height: 5rem;
-	border-radius: 2px;
-	padding: 1rem;
-}
-.profile-text {
-	color: #444444;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-</style>
+		/* Main marketing message and sign up button */
+		.jumbotron {
+			text-align: center;
+			border-bottom: 1px solid #e5e5e5;
+		}
+
+		/* Responsive: Portrait tablets and up */
+		@media screen and (min-width: 768px) {
+
+			/* Remove the padding we set earlier */
+			.header,
+			.marketing,
+			.footer {
+				padding-right: 0;
+				padding-left: 0;
+			}
+
+			/* Space out the masthead */
+			.header {
+				margin-bottom: 30px;
+			}
+
+			/* Remove the bottom border on the jumbotron for visual effect */
+			.jumbotron {
+				border-bottom: 0;
+			}
+		}
+
+		.profile {
+			position: absolute;
+			right: 4rem;
+			top: 4rem;
+			display: flex;
+		}
+
+		.profile-image {
+			width: 5rem;
+			height: 5rem;
+			border-radius: 2px;
+			padding: 1rem;
+		}
+
+		.profile-text {
+			color: #444444;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	</style>
 </head>
+
 <body>
 	<div class="list-group" id="events" style="width:20%;position: absolute;top: 17.2%; left:2%">
 	</div>
@@ -115,13 +126,11 @@ body {
 
 		<div class="jumbotron">
 			<br />
-			<iframe id="embedded_player" height="480" style="width:100%;max-width:640px;"
- 				src="play.html?name=" frameborder="0" allowfullscreen></iframe>
+			<iframe id="embedded_player" height="480" style="width:100%;max-width:640px;" src="play.html?name=" frameborder="0"
+			 allowfullscreen></iframe>
 			<br />
 			<div class="input-group col-sm-offset-2 col-sm-8">
-				<input type="text" class="form-control" value=""
-					id="streamName" placeholder="Type stream name"> <span
-					class="input-group-btn">
+				<input type="text" class="form-control" value="" id="streamName" placeholder="Type stream name"> <span class="input-group-btn">
 					<button onclick="start()" class="btn btn-default">Play</button>
 					<button onclick="stop()" class="btn btn-default">Stop</button>
 				</span>
@@ -131,49 +140,53 @@ body {
 	</div>
 
 
-
+ 
 	<script>
 		function start(streamName) {
+			if (typeof streamName == 'undefined')
+				streamName = $('#streamName').val()
 			console.log(streamName)
 			fetch("streams/" + streamName + ".m3u8", {
-				method : 'HEAD'
-			})
-					.then(
-							function(response) {
-								if (response.status == 200) {
-									$("#embedded_player").attr(
-											"src",
-											"play.html?name=" + streamName
-													+ "&autoplay=true");
-								} else if (response.status == 404) {
-									alert("Are you sure you are broadcasting? If yes, wait a few seconds like 5-10sec then press play button again");
-								} else {
-									alert("An error occured. Please send us an email(contact@antmedia.io) by providing OS, browser info and exact sceneraio")
-								}
+					method: 'HEAD'
+				})
+				.then(
+					function (response) {
+						if (response.status == 200) {
+							$("#embedded_player").attr(
+								"src",
+								"play.html?name=" + streamName +
+								"&autoplay=true");
+						} else if (response.status == 404) {
+							alert("Are you sure you are broadcasting? If yes, wait a few seconds like 5-10sec then press play button again");
+						} else {
+							alert(
+								"An error occured. Please send us an email(contact@antmedia.io) by providing OS, browser info and exact sceneraio"
+							)
+						}
 
-							});
+					});
 		}
-		
+
 		function stop() {
 			$("#embedded_player").attr("src", "play.html?name=");
 		}
 		fetch('https://cors-anywhere.herokuapp.com/http://shaddygarg.pythonanywhere.com/events/?format=json')
-		.then((res) => res.json())
-		.then((body) => {
-			console.log(body)
-			console.log(body.length)
-			for(var i=0;i<body.length;i++) {
-				console.log(body[i].name)
-				$(".list-group").append('<a href="#" class="list-group-item list-group-item-action">'+ body[i].name + '</a>')
-			}
+			.then((res) => res.json())
+			.then((body) => {
+				console.log(body)
+				console.log(body.length)
+				for (var i = 0; i < body.length; i++) {
+					console.log(body[i].name)
+					$(".list-group").append('<a href="#" class="list-group-item list-group-item-action">' + body[i].name + '</a>')
+				}
 				$('#events a').on('click', function (e) {
-				e.preventDefault()
-				$('#events a').removeClass('active')
-				$(this).addClass('active')
-				$('#streamName').attr('value',$(this).text())
-				start($(this).text())
+					e.preventDefault()
+					$('#events a').removeClass('active')
+					$(this).addClass('active')
+					$('#streamName').attr('value', $(this).text())
+					start($(this).text())
+				})
 			})
-		})
 	</script>
 </body>
 
