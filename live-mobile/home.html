@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <title>Live</title>
+
+        <meta name="description" content="Live video streaming application.">
+        <meta name="viewport" content="width=device-width">
+        
+
+        <link rel="stylesheet" href="css/home.css">
+        <script src="js/naviboard.min.js"></script>
+        <script type="text/javascript" src="js/home.js" defer></script>
+
+        <link rel="stylesheet" href="css/navbar.css">
+    </head>
+    <body>
+        <div id="sideNavigation" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="padding"></div>
+          <a href="/home.html" class="box navigable" tabindex="0">Home</a>
+          <a href="/stream.html" class="box navigable" tabindex="0">Stream</a>
+          <a href="/index.html" class="box navigable" tabindex="0">LogOut</a>
+        </div>
+
+        <nav class="topnav">
+          <a href="#" onclick="openNav()">
+            <svg width="20" height="15" id="icoOpen">
+                <path d="M0,5 30,5" stroke="#ddd" stroke-width="3"/>
+                <path d="M0,14 30,14" stroke="#ddd" stroke-width="3"/>
+                <path d="M0,23 30,23" stroke="#ddd" stroke-width="3"/>
+            </svg>
+          </a>
+        </nav>
+
+        <div class="stream-head">
+            Ongoing Live Streams
+        </div>
+        <div class="flex-reverse home-main" id="home-main">
+        </div>
+    </body>
+</html>

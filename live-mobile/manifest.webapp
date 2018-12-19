@@ -1,0 +1,35 @@
+{
+  "cursor": true,
+  "default_locale": "en",
+  "description": "Live - A one stop solution for all your video streaming needs.",
+  "developer": {
+    "name": "Your name",
+    "url": "http://example.com"
+  },
+  "icons": {
+    "128": "/img/icons/icon128x128.png",
+    "16": "/img/icons/icon16x16.png",
+    "48": "/img/icons/icon48x48.png",
+    "60": "/img/icons/icon60x60.png"
+  },
+  "installs_allowed_from": [
+    "*"
+  ],
+  "launch_path": "/index.html",
+  "locales": {
+    "es": {
+      "description": "Una plantilla con la mínima estructura",
+      "name": "Aplicación vacía privilegiada",
+      "permissions": {
+        "audio-capture": {},
+        "video-capture": {},
+        "camera": {},
+        "browser": {},
+        "mobilenetwork": {},
+        "tcp-socket": {}
+      }
+    }
+  },
+  "name": "live",
+  "version": "0.1.0"
+}

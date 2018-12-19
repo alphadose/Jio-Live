@@ -1,0 +1,30 @@
+.stream-flex {
+	display: flex;
+	justify-content: center;
+	bottom: 30px;
+	font-size: 20px;
+	width: 100vw;
+	position: absolute;
+}
+
+.stream-button {
+	background: rgba(0, 0, 0, 0.7);
+	margin: auto;
+	color: #ffffff;
+	padding: 10px 15px;
+	border-radius: 3px;
+}
+
+.video-container {
+	max-width: 220px;
+	margin: 10px 0;
+}
+
+.center {
+	text-align: center;
+	margin: 20px 0 10px 0;
+}
+
+.box:focus {
+	background: rgba(0, 0, 0, 0.9);
+}

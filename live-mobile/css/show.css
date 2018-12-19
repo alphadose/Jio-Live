@@ -1,0 +1,35 @@
+.flex {
+	display: flex;
+}
+
+.space-between {
+	justify-content: space-between;
+}
+
+.index-options {
+	margin: 0 10px;
+	margin-top: 5%;
+	font-size: 20px;
+}
+
+.index-options div {
+	background: rgba(0, 0, 0, 0.7);
+	margin: 0 5px;
+	color: #ffffff;
+	padding: 10px 15px;
+	border-radius: 3px;
+}
+
+.stream-name {
+	text-align: center;
+	padding: 10px 0;
+}
+
+.player {
+	padding: 15px 0;
+}
+
+.box:focus {
+	background: rgba(0, 0, 0, 0.9);
+}
+

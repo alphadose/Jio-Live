@@ -1,0 +1,46 @@
+html, body {
+  margin: 0;
+  padding: 0.5rem;
+}
+
+body {
+  background-image: url('./../img/live.png');
+  background-size: 65%;
+  background-position: center 20%;
+  background-repeat: no-repeat;
+}
+
+.flex {
+	display: flex;
+}
+
+.space-between {
+	justify-content: space-between;
+}
+
+.index-options {
+	margin: 0 10px;
+	margin-top: 95%;
+	font-size: 20px;
+}
+
+.index-options div {
+	background: rgba(0, 0, 0, 0.7);
+	margin: 0 5px;
+	color: #ffffff;
+	padding: 10px 15px;
+	border-radius: 3px;
+}
+
+.box:focus {
+	background: rgba(0, 0, 0, 0.9);
+}
+
+h1 {
+  margin: 0 0 1rem 0;
+}
+
+p {
+  font-size: inherit;
+}
+

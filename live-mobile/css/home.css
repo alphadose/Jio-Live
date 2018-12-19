@@ -1,0 +1,52 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+.flex-reverse {
+	display: flex;
+	flex-direction: column;
+}
+
+.home-main {
+	width: 100vw;
+}
+
+.stream-head {
+	text-align: center;
+	padding-top: 1rem;
+}
+
+.stream-box {
+	width: 100vw;
+	position: relative;
+	margin: 0.8rem auto;
+	width: 92.5%;
+	height: auto;
+}
+
+.stream-box img {
+	width: 100%;
+}
+
+
+.stream-details {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.7);
+	color: #dddddd;
+	padding: 0.25rem 0;
+}
+
+.box:focus {
+	border: 1px black;
+	.stream-details {
+		background: rgba(0, 0, 0, 0.9);
+	}
+}
